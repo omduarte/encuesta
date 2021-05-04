@@ -51,6 +51,7 @@ public class EncuestaController {
 
 		if (result.hasErrors()) {
 			model.addAttribute("titulo", "Formulario de encuesta");
+			model.addAttribute("marcasPc", marcaPcService.findAll());
 			return "form";
 		}
 
